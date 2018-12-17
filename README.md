@@ -1,0 +1,1 @@
+# app-adjectives-in-Norwegian
