@@ -20,7 +20,7 @@ function addLine() {
     btnLeft.addEventListener('click', function() {
       addDots();
       setTimeout(removeDots, 1000);
-      setTimeout(addLine, 2000);
+      setTimeout(addLine, 1000);
       i++;
       //i++;
       btnLeft.setAttribute("disabled", false);
@@ -35,7 +35,7 @@ function addLine() {
     btnRight.addEventListener('click', function() {
       addDots();
       setTimeout(removeDots, 1000);
-      setTimeout(addLine, 2000);
+      setTimeout(addLine, 1000);
       i++;
       //i++;
       btnRight.setAttribute("disabled", false);
@@ -49,7 +49,7 @@ function addLine() {
   const starter = document.getElementById('starter'); starter.addEventListener('click', function() {
     addDots();
     setTimeout(removeDots, 1000);
-    setTimeout(addLine, 2000);
+    setTimeout(addLine, 1000);
     //i++;
     starter.setAttribute("disabled", false);
   });
