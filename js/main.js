@@ -1,9 +1,9 @@
-const starter = document.getElementById('starter');
+//stwórz jedną funcję, która spaja wszytskie trzy
+
 let i = 0;
-
 function addLine() {
-  if (i < chatQuestions.length) {
 
+  if (i < chatQuestions.length) {
     const question = document.createElement('li');
     question.className = ('chat-question');
     const textItem = document.createTextNode(chatQuestions[i]);
@@ -20,8 +20,8 @@ function addLine() {
     btnLeft.appendChild(txtNode);
     chatBtn.appendChild(btnLeft);
     btnLeft.addEventListener('click', function() {
-      addLine(i);
-      i++;
+      addLine(i++);
+      //i++;
       btnLeft.setAttribute("disabled", false);
       btnRight.setAttribute("disabled", false);
     });
@@ -32,23 +32,27 @@ function addLine() {
     btnRight.appendChild(txtNode);
     chatBtn.appendChild(btnRight);
     btnRight.addEventListener('click', function() {
-      addLine(i);
-      i++;
+      addLine(i++);
+      //i++;
       btnRight.setAttribute("disabled", false);
       btnLeft.setAttribute("disabled", false);
     });
     //var button = document.querySelectorAll('button');
   }
 }
-starter.addEventListener('click', function() {
-  addLine(i);
-  i++;
-  starter.setAttribute("disabled", false);
-});
+
+(function() {
+  const starter = document.getElementById('starter'); starter.addEventListener('click', function() {
+    addDots();
+    setTimeout(removeDots, 1000);
+    setTimeout(addLine, 2000);
+    //i++;
+    starter.setAttribute("disabled", false);
+  });
+})();
 
 
-(function() {const buttonek = document.querySelector('.buttonek');
-buttonek.addEventListener('click', function() {
+function addDots() {
   let dots = document.createElement('div');
   let dot = document.createElement('span');
   let dot2 = document.createElement('span');
@@ -61,10 +65,13 @@ buttonek.addEventListener('click', function() {
   dot.className=('dot');
   dot2.className=('dot');
   dot3.className=('dot');
-  setTimeout(removeDiv, 3000);
-});
-function removeDiv() {
-  const element = document.getElementById('dots');
-    element.parentNode.removeChild(element);
 }
-})();
+function removeDots() {
+  const element = document.getElementById('dots');
+  element.parentNode.removeChild(element);
+}
+
+/*lement.addEventListener('event',() => {
+     invokeMe();
+     alsoInvokeMe();
+});*/
