@@ -18,7 +18,10 @@ function addLine() {
     btnLeft.appendChild(txtNode);
     chatBtn.appendChild(btnLeft);
     btnLeft.addEventListener('click', function() {
-      addLine(i++);
+      addDots();
+      setTimeout(removeDots, 1000);
+      setTimeout(addLine, 2000);
+      i++;
       //i++;
       btnLeft.setAttribute("disabled", false);
       btnRight.setAttribute("disabled", false);
@@ -30,7 +33,10 @@ function addLine() {
     btnRight.appendChild(txtNode);
     chatBtn.appendChild(btnRight);
     btnRight.addEventListener('click', function() {
-      addLine(i++);
+      addDots();
+      setTimeout(removeDots, 1000);
+      setTimeout(addLine, 2000);
+      i++;
       //i++;
       btnRight.setAttribute("disabled", false);
       btnLeft.setAttribute("disabled", false);
@@ -58,7 +64,7 @@ function addDots() {
   dots.appendChild(dot);
   dots.appendChild(dot2);
   dots.appendChild(dot3);
-  document.getElementsByClassName("chat-btn")[0].appendChild(dots);
+  document.getElementsByClassName("chat-btn")[i].appendChild(dots);
   dots.id = ('dots');
   dot.className=('dot');
   dot2.className=('dot');
