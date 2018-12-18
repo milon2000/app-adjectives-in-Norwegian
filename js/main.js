@@ -1,5 +1,3 @@
-//stwórz jedną funcję, która spaja wszytskie trzy
-
 let i = 0;
 function addLine() {
 
@@ -70,8 +68,3 @@ function removeDots() {
   const element = document.getElementById('dots');
   element.parentNode.removeChild(element);
 }
-
-/*lement.addEventListener('event',() => {
-     invokeMe();
-     alsoInvokeMe();
-});*/
