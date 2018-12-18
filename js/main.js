@@ -64,7 +64,8 @@ function addDots() {
   dots.appendChild(dot);
   dots.appendChild(dot2);
   dots.appendChild(dot3);
-  document.getElementsByClassName("chat-btn")[i].appendChild(dots);
+  let klosz = document.getElementsByClassName("chat-btn");
+  var lastChild = klosz[klosz.length -1].appendChild(dots);
   dots.id = ('dots');
   dot.className=('dot');
   dot2.className=('dot');
