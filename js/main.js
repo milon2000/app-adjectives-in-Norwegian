@@ -3,13 +3,13 @@ function addLine() {
 
   if (i < chatQuestions.length) {
     const question = document.createElement('li');
-    question.className = ('chat-question');
+    question.className = ('chat-question clear');
     const textItem = document.createTextNode(chatQuestions[i]);
     question.appendChild(textItem);
     document.getElementById('list').appendChild(question);
 
     const chatBtn = document.createElement('li');
-    chatBtn.className = ('chat-btn');
+    chatBtn.className = ('chat-btn clear');
     document.getElementById('list').appendChild(chatBtn);
 
     const btnLeft = document.createElement("button");
@@ -57,15 +57,15 @@ function addLine() {
 
 
 function addDots() {
-  let dots = document.createElement('div');
-  let dot = document.createElement('span');
-  let dot2 = document.createElement('span');
-  let dot3 = document.createElement('span');
+  const dots = document.createElement('div');
+  const dot = document.createElement('span');
+  const dot2 = document.createElement('span');
+  const dot3 = document.createElement('span');
   dots.appendChild(dot);
   dots.appendChild(dot2);
   dots.appendChild(dot3);
-  let klosz = document.getElementsByClassName("chat-btn");
-  var lastChild = klosz[klosz.length -1].appendChild(dots);
+  const klosz = document.getElementsByClassName("chat-btn");
+  const lastChild = klosz[klosz.length -1].appendChild(dots);
   dots.id = ('dots');
   dot.className=('dot');
   dot2.className=('dot');
