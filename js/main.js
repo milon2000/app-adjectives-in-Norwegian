@@ -24,9 +24,9 @@ function addLine() {
       i++;
       //i++;
       btnLeft.setAttribute("disabled", false);
-      btnRight.setAttribute("disabled", false);
+    /*  btnRight.setAttribute("disabled", false);*/
     });
-
+if( i == 0 || i == 3 || i == 5 || i == 7) {
     const btnRight = document.createElement("button");
     btnRight.className = ('button right');
     var txtNode = document.createTextNode(chatButtonsRight[i]);
@@ -41,6 +41,7 @@ function addLine() {
       btnRight.setAttribute("disabled", false);
       btnLeft.setAttribute("disabled", false);
     });
+  }
     //var button = document.querySelectorAll('button');
   }
 }
