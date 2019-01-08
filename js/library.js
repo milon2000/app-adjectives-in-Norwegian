@@ -12,7 +12,7 @@ const chatQuestions = [
   'But there is one exception: short one syllable et-words have no ending in the indefinite plural form: et hus - hus, et barn (a child) - barn.',
   'Do you remember how to form the definite form of the plural?',
   'Yes, great, for example: “biler” (cars) - “bilene” (the cars); jenter - jentene, aviser - avisene. So a definite plural from the noun en gutt is guttene.',
-  'Nicely done! Ok, so let’s move on; it\'s adjective time!',
+  'Ok, so let’s move on; it\'s adjective time!',
   'That\'s the spirit! :) The main rule is that most adjectives add – t to the neuter and – e to the plural. You can see what it looks like in the example below:',
   'en varm dag (a warm day) - ei varm seng (a warm bed) - et varmt hus (a warm house) - varme dager (warm days) - varme senger (warm beds) - varme huser (warm houses). Easy-peasy, right?',
   'Good! There are a few exceptions from this main rule, but let\'s leave this for another time. I want to show you one simple, but important and useful exception: the word small - "liten" in Norwegian looks like this: en liten dag - ei lita seng - et lite hus - små dager - små senger - små huser',
@@ -48,26 +48,8 @@ const chatButtonsLeft = [
   'Thanks, Mila, now I know everything about nouns and adjectives!'
 ];
 const chatButtonsRight = [
-  'Yeah, I can’t wait!',
-  'Ok, and?',
-  'An example will be handy.',
-  'Nope, I need help :)',
-  'Sounds complicated.',
-  'jenta!',
-  'Why not?',
-  'Clear as a day!',
-  'Kind of :)',
-  'Easy as pie!',
-  'Steel easy.',
-  'By adding -ene to the end?',
-  'I knew it!',
-  'I am so excited!',
-  'An example, please!',
-  'Easy as ABC!',
-  'Wow, thanks Mila!',
-  'Give me more!',
-  'Example, please!',
-  'I am still waiting for the difficult part.',
-  'Yes, please!',
-  'Mila, you are an amazing teacher!'
+  'Nah,  I\'m good at nouns. Let\'s move to adjectives.',
+  'Yes, I do.',
+  'jenten',
+  'Yes, I remember.'
 ]
